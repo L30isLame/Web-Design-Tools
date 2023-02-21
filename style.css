@@ -44,7 +44,7 @@ a:link {
   }
   
   a:visited {
-	color: white;
+	color: rgb(8, 144, 223);
 	background-color: transparent;
 	text-decoration: none;
   }
