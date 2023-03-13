@@ -2,37 +2,46 @@
 <html lang="en">
 
    <head>
-      <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-      <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="layout.css" type="text/css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
    </head>
 
    <body>
       <header>
-         <h1>Steve Jobs</h1>
+        <h1 class="w3-button w3-xxxlarge w3-round-large w3-blue w3-hover-indigo w3-ripple">Steve Jobs</h1>
       </header>
-      <nav>
-         <a href="index.html">Home</a> | <a href="faq.html">FAQ</a> | <a href="gallery.html">Gallery</a> | <a href="contact-us.html">Contact Us</a>
-      </nav>
+      <nav class="topnav">
+        <a class="w3-xlarge" href="index.html"><i class="fa fa-home"></i></a>
+        <a class="w3-xlarge" href="faq.html">FAQ</a>
+        <a class="w3-xlarge" href="gallery.html">Gallery</a>
+        <a class="w3-xlarge active" href="contact-us.html">Contact Us</a>
+     </nav>
 
       <section>
-        <h2>Contact Us</h2>
+        <h2 class="w3-container w3-text-blue">Contact Us</h2>
         <fieldset>
-            <legend>Contact Information</legend>
-            <h3>Personal Information</h3>
-            <form id="contact" method="post" action="mailto:e3358520@student.dcccd.edu">
-              <p>
-                <label title="Enter your full name.">Name <input type="text" name="Name" placeholder="Name"></label>
-              </p>
-              <p>
-                <label title="Enter your email address.">E-Mail <input type="text" name="Email" placeholder="Email"></label>
-              </p>
-              <p>
-                <label for="questionID">Subject of Question or Comment</label>
-                <select name="questionID" id="questionID">
+            <legend class="w3-container w3-blue">Contact Information</legend>
+            <h3 class="w3-text-blue">Personal Information</h3>
+            <form class="w3-container w3-light-grey" id="contact" method="post" action="mailto:e3358520@student.dcccd.edu">
+            <div class="w3-row-padding">
+              <div class="w3-half">
+                <label class="w3-text-blue" title="Enter your full name.">Name <input class="w3-input w3-border w3-round w3-hover-blue" type="text" name="Name" placeholder="Name"></label>
+              </div>
+              <div class="w3-half">
+                <label class="w3-text-blue" title="Enter your email address.">E-Mail <input class="w3-input w3-border w3-round w3-hover-blue" type="text" name="Email" placeholder="Email"></label>
+              </div>
+              <div class="w3-margin">
+                <label class="w3-text-blue" for="questionID">Subject of Question or Comment</label>
+                <select class="w3-select w3-border" name="questionID" id="questionID">
                   <option value="">&larr;&nbsp;Select Type&nbsp;&rarr;</option>
                   <option value="1">Product</option>
                   <option value="2">History</option>
@@ -40,73 +49,74 @@
                   <option value="4">Apple</option>
                   <option value="5">Other</option>
                 </select>
-              </p>
-              <p>
-                <label title="Select to be contacted."><input type="checkbox" name="contact-me"> Contact Me</label>
-                <label title="Select to be Subscribed."><input type="checkbox" name="Subscribe"> Subscribe to Mailing List</label>
-              </p>
-              <h3>Message</h3>
-              <p>
-                <label title="Select if you have a question.">Question <input type="radio" name="request"></label>
+              </div>
+              <div class="w3-margin">
+                <label title="Select to be contacted."><input class="w3-check" type="checkbox" name="contact-me"> Contact Me</label>
+                <label title="Select to be Subscribed."><input class="w3-check" type="checkbox" name="Subscribe"> Subscribe to Mailing List</label>
+              </div>
+              <h3 class="w3-text-blue">Message</h3>
+              <div class="w3-margin">
+                <label title="Select if you have a question.">Question <input class="w3-radio" type="radio" name="request"></label>
                 <br>
-                <label title="Select if you have a comment.">Comment <input type="radio" name="request"></label>
-              </p>
-              <p>
-                <label for="message">Message</label><br>
-                <textarea id="message" name="message"></textarea>
-              </p>
-              <input type="submit" name="submit" value="Submit">
-              <input type="reset" name="reset" value="Reset">
+                <label title="Select if you have a comment.">Comment <input class="w3-radio" type="radio" name="request"></label>
+              </div>
+              <div class="w3-margin">
+                <label class="w3-text-blue" for="message">Message</label><br>
+                <textarea class="w3-input w3-border w3-round w3-hover-blue" id="message" name="message"></textarea>
+              </div>
+              <input class="w3-button w3-large w3-round-large w3-blue w3-hover-indigo w3-ripple w3-margin" type="submit" name="submit" value="Submit">
+              <input class="w3-button w3-large w3-round-large w3-red w3-hover-purple w3-ripple w3-margin" type="reset" name="reset" value="Reset">
+              </div>
             </form>
         </fieldset>
       </section>
 
       <section>
-         <h2>Apple Products</h2>
-         <table border="2" cellpadding="2">
-            <caption>Popular Apple Products</caption>
+         <h2 class="w3-container w3-text-blue">Apple Products</h2>
+         <table class="w3-table w3-striped w3-large w3-hoverable" border="2" cellpadding="2">
+            <caption class="w3-container w3-text-blue">Popular Apple Products</caption>
             <tr>
-              <th colspan="3">2023 Products</th>
+              <th class="w3-text-blue" colspan="3">2023 Products</th>
             </tr>
             <tr>
-              <th scope="col">Product</th>
-              <th scope="col">Price (USD)</th>
-              <th scope="col">Description</th>
+              <th class="w3-center w3-text-blue" scope="col">Product</th>
+              <th class="w3-center w3-text-blue" scope="col">Price (USD)</th>
+              <th class="w3-center w3-text-blue" scope="col">Description</th>
             </tr>
             <tr>
-              <th scope="row">iPhone 14</th>
-              <td>$800</td>
+              <th class="w3-text-blue" scope="row">iPhone 14</th>
+              <td class="w3-center">$800</td>
               <td rowspan="2">The iPhone 14 and 14 Plus features improved cameras, a more powerful A15 Bionic chip, a longer battery life, and a smaller notch compared to its predecessor.</td>
             </tr>
             <tr>
-              <th scope="row">iPhone 14 Plus</th>
-              <td>$900</td>
+              <th class="w3-text-blue" scope="row">iPhone 14 Plus</th>
+              <td class="w3-center">$900</td>
             </tr>
             <tr>
-                <th scope="row">Mac Book Air</th>
-                <td>$999</td>
+                <th class="w3-text-blue" scope="row">Mac Book Air</th>
+                <td class="w3-center">$999</td>
                 <td>The MacBook Air is a lightweight, ultra-portable laptop with a Retina display, Touch ID, and long battery life.</td>
             </tr>
             <tr>
-                <th scope="row">iPad Air</th>
-                <td>$599</td>
+                <th class="w3-text-blue" scope="row">iPad Air</th>
+                <td class="w3-center">$599</td>
                 <td>The iPad Air is a powerful and versatile tablet with a 10.9-inch Liquid Retina display, M1 chip, and support for the Apple Pencil and Magic Keyboard.</td>
             </tr>
             <tr>
-                <th scope="row">AirPods (3rd generation)</th>
-                <td>$169</td>
+                <th class="w3-text-blue" scope="row">AirPods (3rd generation)</th>
+                <td class="w3-center">$169</td>
                 <td>AirPods Generation 3 are the latest iteration of Apple's popular wireless earbuds, featuring a redesigned shape, improved sound quality, and new features like spatial audio and touch controls.</td>
             </tr>
             <tr>
-                <th scope="row">Apple Watch Series 8</th>
-                <td>$399</td>
+                <th class="w3-text-blue" scope="row">Apple Watch Series 8</th>
+                <td class="w3-center">$399</td>
                 <td>The Apple Watch is a smartwatch that can be paired with an iPhone to track fitness, make calls, send texts, and perform various other functions.</td>
             </tr>
           </table>
           <p>The Cell Padding and border attributes for tables are no longer in use and have become outdated. The preferred method of styling tables is now through CSS, which offers more flexibility and control over the table's appearance. By utilizing CSS, the issues with Cell Padding and border attributes can be resolved.</p>
       </section>
 
-      <footer>
+      <footer class="w3-container w3-gray">
          <p>For more up to date information on Steve Jobs legacy Apple check out their <a href="https://www.apple.com">website</a> to see what is new.</p>
          <p>This is a functional site created for class at <a href="https://www.dallascollege.edu/">Dallas College</a>. Contact the Webmaster through <a href="mailto:Donaldduck.LR@gmail.com">Email</a>.</p>
       </footer>
