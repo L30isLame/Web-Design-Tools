@@ -45,7 +45,7 @@ figure img{
     border: 3px solid rgb(8, 144, 223);
     border-radius: 5px;
     padding: 5px;
-    background-color: white;
+    background-color: black;
     width: auto;
 }
 
@@ -87,7 +87,7 @@ figure img{
   /* Add a color to the active/current link */
   .topnav a.active {
     background-color: #04aa6d;
-    color: white;
+    color: rgb(0, 0, 0);
   }
 
 
@@ -115,3 +115,8 @@ figure img{
     font-style: italic;
     font-weight: bold;
 }
+
+/* contact table stripes */
+tr:nth-child(odd) {
+    color: rgb(211, 211, 211);
+  }

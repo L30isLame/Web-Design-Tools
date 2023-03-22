@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
 }
+body {
+    background-color: black;
+}
 h1 {
     font-family: 'Source Sans Pro', sans-serif;
     color: black;
@@ -34,11 +37,14 @@ h6 {
 }
 p{
     font-family: 'Source Sans Pro', sans-serif;
-    color: rgb(51,51,51);
+    color: rgb(211, 211, 211);
     font-size: 20px;
 } 
+figcaption {
+    color: rgb(211, 211, 211);
+}
 a:link {
-	color: rgb(6,53,81);
+	color: #00A2FF;
 	background-color: transparent;
 	text-decoration: none;
   }
@@ -61,7 +67,6 @@ a:link {
 	text-decoration: underline;
 }
 header {
-    background-color: white;
     color: rgb(75, 75, 75);
     height: 150px;
     width: 100%;
@@ -76,51 +81,48 @@ header {
 }
 header h1 {
     margin: 1%;
-    color: white;
 }
 main {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    background-color: white;
 } 
 section {
     width: 100%;
     height: 100%;
-    background-color: white;
     padding: 1%;
     text-align: center;
 } 
 aside {
     width: 20%;
     height: 100%;
-    background-color: white;
     padding: 1%;
 } 
 article {
     width: 80%;
     height: 100%;
-    background-color: rgb(193, 193, 193);
+    background-color: black;
     padding: 10%;
     margin: 0 auto 20vh;
     text-align: left;
     float: right;
     box-sizing: border-box;
     border-radius: 20px;
-    border-color: black;
+    border-color: rgb(8, 144, 223);
     border-style: ridge;
     border-width: 24px;
 } 
 footer {
     width: 100%;
     clear: both;
-    background-color: white;
     text-align: center;
     padding: 1%;
+    background-color: #333;
 }
 .accomp ul li {
     font-size: 20px;
     padding: 5px;
-    color: black;
+    background-color: black;
+    color: rgb(211, 211, 211);
     list-style-position: inside;
 }
